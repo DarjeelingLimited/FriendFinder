@@ -17,4 +17,4 @@ var newFriends = [
     }
 ];
 
-module.exports = Friends
+module.exports = newFriends

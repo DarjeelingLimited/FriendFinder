@@ -1,0 +1,27 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Assignment for GT Coding Bootcamp (ATL)",
+  "main": "server.js",
+  "scripts": {
+    "test": "server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarjeelingLimited/FriendFinder.git"
+  },
+  "keywords": [
+    "FriendFinder"
+  ],
+  "author": "HMS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarjeelingLimited/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/DarjeelingLimited/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
