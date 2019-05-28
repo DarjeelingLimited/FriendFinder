@@ -1,4 +1,5 @@
-//Dependencies
+// Sourced: HotRestaurant Class Activity
+// Dependencies
 // Series of npm packages that we will use to give our server useful functionality
 var express = require("express");
 var path = require("path");
@@ -20,7 +21,7 @@ app.use(express.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 require(".app/routing/htmlRoutes")(app);
-require('./app/routing/apiRoutes')(app)
+require('./app/routing/apiRoutes')(app);
 
 // =============================================================================
 // LISTENER

@@ -12,9 +12,15 @@
     <!-- Optional theme
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
     <title>FriendFinder Survey</title>
 </head>
 
@@ -37,8 +43,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 1</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q1">Question 1</h5>
+                <p class="card-text">You have never met a stranger.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -52,8 +58,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 2</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q2">Question 2</h5>
+                <p class="card-text">You like to ask questions and always feel yourself saying "Why?"</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -67,8 +73,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 3</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q3">Question 3</h5>
+                <p class="card-text">You try to walk in someone else's shoes.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -82,8 +88,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 4</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q4">Question 4</h5>
+                <p class="card-text">Your ideal vacation includes a one-way ticket and a backpack.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -97,8 +103,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 5</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q5">Question 5</h5>
+                <p class="card-text">You like to go with the flow.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -112,8 +118,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 6</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q6">Question 6</h5>
+                <p class="card-text">You choose the path less traveled.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -127,8 +133,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 7</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q7">Question 7</h5>
+                <p class="card-text">You like animals more than people.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -142,8 +148,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 8</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q8">Question 8</h5>
+                <p class="card-text">You have learned a new skill in the last 6 months.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -157,8 +163,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 9</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q9">Question 9</h5>
+                <p class="card-text">You prefer being indoors vs. outdoors.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -172,8 +178,8 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Question 10</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title" id="q10">Question 10</h5>
+                <p class="card-text">You like to-do lists and always plan ahead.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -185,9 +191,7 @@
             </div>
         </div>
 
-
-
-        <button type="button" class="btn btn-success btn-lg btn-block">Submit</button>
+        <button id="submit" type="button" class="btn btn-success btn-lg btn-block">Submit</button>
 
         <hr>
         <footer>
@@ -198,12 +202,42 @@
                 </p>
             </div>
         </footer>
-        
-<!-- end of div container tag-->
-    </div>
-</body>
 
-<!-- Compiled and minified JavaScript -->
-<script type="text/javascript" src="style.js"></script>
+        <!-- end of div container tag-->
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="style.js">
+
+        //Capture form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var friendData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            }
+
+            //POST the friend API
+            $.post("/api/friends")
+        })
+
+
+
+
+    </script>
+</body>
 
 </html>
