@@ -6,7 +6,7 @@ var path = require("path");
 // We are linking our routes to a series of "data" sources.
 // These data sources hold arrays of information on friends 
 // ===============================================================================
-var friends = require("..data/friends.js");
+var friends = require("../data/friends.js");
 
 module.exports = function (app) {
     // API GET Requests
@@ -21,7 +21,7 @@ module.exports = function (app) {
     // (ex. User fills out a friends survey ... this data is then sent to the server...
     // Then the server saves the data to the newFriends array)
     // ---------------------------------------------------------------------------
-    app.post("/api/tables", function(req, res) {
+    app.post("/api/friends", function(req, res) {
             friends.push(req.body);
             res.json(true);
           }
