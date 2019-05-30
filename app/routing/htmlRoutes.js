@@ -17,6 +17,11 @@ module.exports = function(app) {
     app.get("/survey", function(req, res) {
       res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
+    app.get("/data", function(req, res) {
+      res.sendFile(path.join(__dirname, "../data/friends.js"));
+
+      //I have tried changing this path multiple times and can't get the friends JSON to load anymore
+    });
   
     // If no matching route is found default to home
     app.get("*", function(req, res) {

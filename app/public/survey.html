@@ -43,7 +43,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q1">Question 1</h5>
+                <h5 class="card-title" id="q1"><b>Question 1</b></h5>
                 <p class="card-text">You have never met a stranger.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -58,7 +58,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q2">Question 2</h5>
+                <h5 class="card-title" id="q2"><b>Question 2</b></h5>
                 <p class="card-text">You like to ask questions and always feel yourself saying "Why?"</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -73,7 +73,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q3">Question 3</h5>
+                <h5 class="card-title" id="q3"><b>Question 3</b></h5>
                 <p class="card-text">You try to walk in someone else's shoes.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -88,7 +88,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q4">Question 4</h5>
+                <h5 class="card-title" id="q4"><b>Question 4</b></h5>
                 <p class="card-text">Your ideal vacation includes a one-way ticket and a backpack.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -103,7 +103,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q5">Question 5</h5>
+                <h5 class="card-title" id="q5"><b>Question 5</b></h5>
                 <p class="card-text">You like to go with the flow.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -118,7 +118,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q6">Question 6</h5>
+                <h5 class="card-title" id="q6"><b>Question 6</b></h5>
                 <p class="card-text">You choose the path less traveled.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -133,7 +133,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q7">Question 7</h5>
+                <h5 class="card-title" id="q7"><b>Question 7</b></h5>
                 <p class="card-text">You like animals more than people.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -148,7 +148,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q8">Question 8</h5>
+                <h5 class="card-title" id="q8"><b>Question 8</b></h5>
                 <p class="card-text">You have learned a new skill in the last 6 months.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -163,7 +163,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q9">Question 9</h5>
+                <h5 class="card-title" id="q9"><b>Question 9</b></h5>
                 <p class="card-text">You prefer being indoors vs. outdoors.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -178,7 +178,7 @@
 
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title" id="q10">Question 10</h5>
+                <h5 class="card-title" id="q10"><b>Question 10</b></h5>
                 <p class="card-text">You like to-do lists and always plan ahead.</p>
                 <select class="chosen-select" id="q1">
                     <option value="">Select an option</option>
@@ -190,14 +190,14 @@
                 </select>
             </div>
         </div>
-
+        <br>
         <button id="submit" type="button" class="btn btn-success btn-lg btn-block">Submit</button>
 
         <hr>
         <footer>
             <div class="container">
                 <p>
-                    <a href="../app/data/friends.js">API Friends List </a>|
+                    <a href="data">API Friends List </a>|
                     <a href="https://github.com/DarjeelingLimited/FriendFinder">GitHub Repo</a>
                 </p>
             </div>
@@ -232,6 +232,8 @@
 
             //POST the friend API
             $.post("/api/friends")
+            //do I need to run a function here as well? When triyng to go to localhost:8080/api/friends, nothing ever loads. 
+            //What else needs to be done to load up the API URL - am I missing another certain step?
         })
 
 

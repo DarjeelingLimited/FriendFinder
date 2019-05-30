@@ -2,7 +2,7 @@
 // Dependencies
 // Series of npm packages that we will use to give our server useful functionality
 var express = require("express");
-var path = require("path");
+//var path = require("path");
 
 // Tells node that we are creating an "express" server
 var app = express();
