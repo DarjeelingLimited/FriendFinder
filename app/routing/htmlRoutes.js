@@ -10,20 +10,20 @@ module.exports = function(app) {
     // In each of the below cases the user is shown an HTML page of content
     // ---------------------------------------------------------------------------
   
-    app.get("/", function(req, res) {
+    app.get("/", function(req, res) {f
       res.sendFile(path.join(__dirname, "../public/home.html"));
     });
   
     app.get("/survey", function(req, res) {
       res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
-    app.get("/data", function(req, res) {
-      res.sendFile(path.join(__dirname, "../data/friends.js"));
+    // app.get("/data", function(req, res) {
+    //   res.sendFile(path.join(__dirname + "/../data/friends.js"));
 
-      //I have tried changing this path multiple times and can't get the friends JSON to load anymore
-    });
+    //   //I have tried changing this path multiple times and can't get the friends JSON to load anymore
+    // });
   
-    // If no matching route is found default to home
+    // // If no matching route is found default to home
     app.get("*", function(req, res) {
       res.sendFile(path.join(__dirname, "../public/home.html"));
     });
