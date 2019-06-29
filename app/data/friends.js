@@ -1,4 +1,4 @@
-var newFriends = [
+var friends = [
     {
         "name": "Keanu Reeves",
         "photo": "https://en.wikipedia.org/wiki/Keanu_Reeves#/media/File:Keanu_Reeves_(crop_and_levels)_(cropped).jpg",
@@ -49,4 +49,4 @@ var newFriends = [
     }
 ];
 
-module.exports = newFriends
+module.exports = friends;
